@@ -1,0 +1,275 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #352958;
+    background-color: #F8F6FF;
+    background-image: url('group4/градиентгаусс2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 80cap;
+  background-position-y: top;
+  min-height: 100vh;
+}
+
+
+  
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+    
+   
+  }
+
+  .number{
+    color: #352958;
+    font-weight: bold; /* Делаем шрифт более жирным */
+  padding-right: 10px; /* Отступ справа */
+  padding-left: 10px; /* Отступ слева */
+  }
+  
+  .logo-link {
+    display: block;
+  }
+  
+  .logo img {
+    height: 50px;
+    
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .menu a {
+    color: #352958;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #352958;;
+    transition: width 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #B1A8CB;
+  }
+  
+  .menu a:hover::after {
+    width: 100%;
+  }
+  
+  .apply-btn {
+    background-color: #F8F6FF;
+    color: #352958;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px ;
+    border: 2px solid #352958; /* Добавлена граница */
+  transition: background-color 0.3s, border-color 0.3s; /* Добавлена плавная смена цвета границы */
+  }
+  
+  .apply-btn:hover {
+    background-color: #352958;
+    color: #fff;
+
+  }
+  
+  
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .text-block {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    font-size: 24px;
+
+  }
+
+  .text-block h2 {
+    font-size: 28px; /* размер заголовка */
+  }
+  
+  .image-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: -60px; /* увеличение отступа справа */
+  }
+  
+  
+  
+  
+
+  /* Стили для блоков с функциями */
+.feature-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+
+.feature-block {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #352958;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature-block h3 {
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.btn-group .btn-1 {
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 5px;
+  background-color: #352958;
+  color: #F8F6FF;
+  border: 2px solid #352958;
+  border-radius: 5px;
+}
+.btn-group .btn-2 {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #F8F6FF;
+  margin: 0 5px;
+  border: 2px solid #352958;
+  border-radius: 10px;
+  color: #352958;
+}
+
+
+
+.btn-group2 .btn-3{
+  padding: 10px;
+  border: 2px solid #352958;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+.btn-group2 .btn-4{
+  padding: 10px;
+  border: 2px solid #352958;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.navbar-toggler{
+  color: #352958;
+  margin-top: 10%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("group4/Бургер.png");
+}
+
+
+.footer {
+  background-color:#ffffff;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 30px ;
+    border: 2px solid #352958;
+    margin-left:15%;
+    margin-right: 10%;
+    width: 70%;
+    
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-phone {
+  font-size: 18px;
+  font-weight: bold;
+  color: #352958;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social-link {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.footer-social-link:hover {
+  color: #ccc;
+}
+
+ 
+  
